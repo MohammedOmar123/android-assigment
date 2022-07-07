@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="164dp"
+        android:layout_height="185dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/radiusimageview"
+            android:src="@drawable/imgbook" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_gravity="bottom|center"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/radiusbutton"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_image_24"
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="225dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.3"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/catogersmall"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="8dp"
+                android:text="Catogery"
+                android:textAlignment="center"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/book_name"
+            android:layout_width="fill_parent"
+            android:layout_height="51dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/booksmull"
+            android:hint="  Book Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/author_name"
+            android:layout_width="fill_parent"
+            android:layout_height="51dip"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/person"
+            android:hint="  author name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/release_year"
+            android:layout_width="fill_parent"
+            android:layout_height="51dip"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/calendar"
+            android:hint="  Release Year"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/page_number"
+            android:layout_width="fill_parent"
+            android:layout_height="51dip"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/numberspages"
+            android:hint="  Pages Number"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/create_book"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiusbuttoncreatebook"
+            android:text="Create"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+
+
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/imgbook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>-->
+
+    <!-- <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/add_image_forbook"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgbook"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearance="?attr/actionButtonStyle"
+            app:shapeAppearanceOverlay="@style/imageViewRounded"
+            app:strokeColor="@android:color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="69dp" />-->
+
+
+</RelativeLayout>
